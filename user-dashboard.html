@@ -1,129 +1,368 @@
 <!DOCTYPE html>
-<html lang="zxx">
-    
-<head>
-        <!-- Meta Tag -->
-        <meta charset="utf-8" />
-        <title>LogiLand - Transport & Logistics Service HTML Template</title>
-        <meta name="description" content="" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon -->
+    <link type="icon" href="assets/images/fav.svg" />
+    <!-- External Stylesheets -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/meanmenu.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/sal.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/magnific-popup.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/odometer.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <!-- Title -->
+    <title>Go Express - Transport & Logistics Service</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" href="assets/images/fav.svg" />
-        <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.svg" />
+      :root {
+        --header-height: 3rem;
+        --nav-width: 68px;
+        --first-color: #4723d9;
+        --first-color-light: #afa5d9;
+        --white-color: #f7f6fb;
+        --body-font: "Nunito", sans-serif;
+        --normal-font-size: 1rem;
+        --z-fixed: 100;
+      }
 
-        <!-- Bootstrap  v5.1.3 css -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <!-- Meanmenu  css -->
-        <link rel="stylesheet" href="assets/css/meanmenu.css" />
-        <!-- Sal css -->
-        <link rel="stylesheet" href="assets/css/sal.css" />
-        <!-- Magnific css -->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-        <!-- Swiper Slider css -->
-        <link rel="stylesheet" href="assets/css/swiper.min.css" />
-        <!-- Carousel css file -->
-        <link rel="stylesheet" href="assets/css/owl.carousel.css" />
-        <!-- Icons css -->
-        <link rel="stylesheet" href="assets/css/icons.css" />
-        <!-- Odometer css -->
-        <link rel="stylesheet" href="assets/css/odometer.min.css" />
-        <!-- Select css -->
-        <link rel="stylesheet" href="assets/css/nice-select.css" />
-        <!-- Animate css -->
-        <link rel="stylesheet" href="assets/css/animate.css" />
-        <!-- Style css -->
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <!-- Responsive css -->
-        <link rel="stylesheet" href="assets/css/responsive.css" />
-    </head>
+      *,
+      ::before,
+      ::after {
+        /* 	box-sizing: border-box; */
+      }
 
-    <body>
-        <!-- Preloader start -->
-        <div id="preloader" class="preloader">
-            <div class="animation-preloader">
-                <div class="spinner">
-                    <div class="loader-icon">
-                        <img src="assets/images/logo/loder.png" alt="Corporate Business HTML Template" />
-                    </div>
-                </div>
-                <div class="txt-loading">
-                    <span data-text-preloader="L" class="letters-loading"> L </span>
-                    <span data-text-preloader="O" class="letters-loading"> O </span>
-                    <span data-text-preloader="G" class="letters-loading"> G </span>
-                    <span data-text-preloader="I" class="letters-loading"> I </span>
-                    <span data-text-preloader="L" class="letters-loading"> L </span>
-                    <span data-text-preloader="A" class="letters-loading"> A </span>
-                    <span data-text-preloader="N" class="letters-loading"> N </span>
-                    <span data-text-preloader="D" class="letters-loading"> D </span>
-                </div>
+      body {
+        /* 	position: relative; */
+        margin: var(--header-height) 0 0 0;
+        padding: 0 1rem;
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        transition: 0.5s;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .header {
+        width: 100%;
+        height: var(--header-height);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        background-color: var(--white-color);
+        z-index: var(--z-fixed);
+        transition: 0.5s;
+      }
+
+      .header_toggle {
+        color: var(--first-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      .header_img {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .header_img img {
+        width: 40px;
+      }
+
+      .l-navbar {
+        /* 	position: fixed; */
+        top: 0;
+        left: -30%;
+        width: var(--nav-width);
+        /* 	height: 100vh; */
+        background-color: var(--first-color);
+        padding: 0.5rem 1rem 0 0;
+        transition: 0.5s;
+        z-index: var(--z-fixed);
+      }
+
+      .nav {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+      }
+
+      .nav_logo,
+      .nav_link {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        align-items: center;
+        column-gap: 1rem;
+        padding: 0.5rem 0 0.5rem 1.5rem;
+      }
+
+      .nav_logo {
+        margin-bottom: 2rem;
+      }
+
+      .nav_logo-icon {
+        font-size: 1.25rem;
+        color: var(--white-color);
+      }
+
+      .nav_logo-name {
+        color: var(--white-color);
+        font-weight: 700;
+      }
+
+      .nav_link {
+        position: relative;
+        color: var(--first-color-light);
+        margin-bottom: 1.5rem;
+        transition: 0.3s;
+      }
+
+      .nav_link:hover {
+        color: var(--white-color);
+      }
+
+      .nav_icon {
+        font-size: 1.25rem;
+      }
+
+      .show {
+        left: 0;
+      }
+
+      .body-pd {
+        padding-left: calc(var(--nav-width) + 1rem);
+      }
+
+      .active {
+        color: var(--white-color);
+      }
+
+      .active::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 2px;
+        height: 32px;
+        background-color: var(--white-color);
+      }
+
+      .height-100 {
+        height: 100vh;
+      }
+
+      @media screen and (min-width: 768px) {
+        body {
+          margin: calc(var(--header-height) + 1rem) 0 0 0;
+          padding-left: calc(var(--nav-width) + 2rem);
+        }
+
+        .header {
+          height: calc(var(--header-height) + 1rem);
+          padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
+        }
+
+        .header_img {
+          width: 40px;
+          height: 40px;
+        }
+
+        .header_img img {
+          width: 45px;
+        }
+
+        .l-navbar {
+          left: 0;
+          padding: 1rem 1rem 0 0;
+        }
+
+        .show {
+          width: calc(var(--nav-width) + 156px);
+        }
+
+        .body-pd {
+          padding-left: calc(var(--nav-width) + 188px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <header class="header" id="header">
+            <div class="header_toggle">
+              <i class="fa-solid fa-arrow-right-arrow-left" id="header-toggle"></i>
             </div>
-            <button class="tj-primary-btn">Cancel Preloader</button>
-        </div>
-        <!-- Preloader end -->
-        
-        <!--=========== Footer Section End =========-->
-
-        <!-- start scrollUp  -->
-        <div class="logiland-scroll-top progress-done">
-            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                <path
-                    d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-                    style="
-                        transition: stroke-dashoffset 10ms linear 0s;
-                        stroke-dasharray: 307.919px, 307.919px;
-                        stroke-dashoffset: 71.1186px;
-                    "
-                ></path>
-            </svg>
-            <div class="logiland-scroll-top-icon">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    role="img"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                    data-icon="mdi:arrow-up"
-                    class="iconify iconify--mdi"
-                >
-                    <path
-                        fill="currentColor"
-                        d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8v12Z"
-                    ></path>
-                </svg>
+            <div class="header_img">
+              <img src="https://i.imgur.com/hczKIze.jpg" alt="" />
             </div>
+          </header>
+          <div class="l-navbar position-fixed vh-100" id="nav-bar">
+            <nav class="nav">
+              <div>
+                <a href="#" class="nav_logo">
+                  <i class="bx bx-layer nav_logo-icon"></i>
+                  <span class="nav_logo-name">Go Express</span>
+                </a>
+                <div class="nav_list">
+                  <a href="#" class="nav_link active">
+                    <i class="bx bx-grid-alt nav_icon"></i>
+                    <span class="nav_name">Dashboard</span>
+                  </a>
+                  <a href="#" class="nav_link">
+                    <i class="bx bx-user nav_icon"></i>
+                    <span class="nav_name">Users</span>
+                  </a>
+                  <a href="#" class="nav_link">
+                    <i class="bx bx-message-square-detail nav_icon"></i>
+                    <span class="nav_name">Messages</span>
+                  </a>
+                  <a href="#" class="nav_link">
+                    <i class="bx bx-bookmark nav_icon"></i>
+                    <span class="nav_name">Bookmark</span>
+                  </a>
+                  <a href="#" class="nav_link">
+                    <i class="bx bx-folder nav_icon"></i>
+                    <span class="nav_name">Files</span>
+                  </a>
+                  <a href="#" class="nav_link">
+                    <i class="bx bx-bar-chart-alt-2 nav_icon"></i>
+                    <span class="nav_name">Stats</span>
+                  </a>
+                </div>
+              </div>
+              <a href="#" class="nav_link">
+                <i class="bx bx-log-out nav_icon"></i>
+                <span class="nav_name">SignOut</span>
+              </a>
+            </nav>
+          </div>
+          <!--Container Main start-->
+          <div class="height-100 bg-light">
+            <h4>Main Components</h4>
+          </div>
         </div>
-        <!-- End scrollUp  -->
+      </div>
+    </div>
+    <!--=========== Footer Section End =========-->
+    <!-- start scrollUp  -->
+    <div class="logiland-scroll-top progress-done">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919px, 307.919px;
+            stroke-dashoffset: 71.1186px;
+          "
+        ></path>
+      </svg>
+      <div class="logiland-scroll-top-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          role="img"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+          data-icon="mdi:arrow-up"
+          class="iconify iconify--mdi"
+        >
+          <path
+            fill="currentColor"
+            d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8v12Z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <!-- End scrollUp  -->
+    <!-- Script All Start-->
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/meanmenu.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/sal.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        const showNavbar = (toggleId, navId, bodyId, headerId) => {
+          const toggle = document.getElementById(toggleId),
+            nav = document.getElementById(navId),
+            bodypd = document.body,
+            headerpd = document.getElementById(headerId);
 
-        <!-- Modernizr.JS -->
-        <script src="assets/js/modernizr-2.8.3.min.js"></script>
-        <!-- jQuery.min JS -->
-        <script src="assets/js/jquery.min.js"></script>
-        <!-- Bootstrap.min JS -->
-        <script src="assets/js/bootstrap.min.js"></script>
-        <!-- Meanmenu JS -->
-        <script src="assets/js/meanmenu.js"></script>
-        <!-- Imagesloaded JS -->
-        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-        <!-- Isotope JS -->
-        <script src="assets/js/isotope.pkgd.min.js"></script>
-        <!-- Magnific JS -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!-- Swiper.min JS -->
-        <script src="assets/js/swiper.min.js"></script>
-        <!-- Owl.min JS -->
-        <script src="assets/js/owl.carousel.js"></script>
-        <!-- Appear JS -->
-        <script src="assets/js/jquery.appear.min.js"></script>
-        <!-- Odometer JS -->
-        <script src="assets/js/odometer.min.js"></script>
-        <!-- Sal JS -->
-        <script src="assets/js/sal.js"></script>
-        <!-- Nice JS -->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <!-- Main JS -->
-        <script src="assets/js/main.js"></script>
-    </body>
+          // Validate that all variables exist
+          if (toggle && nav && bodypd && headerpd) {
+            toggle.addEventListener("click", () => {
+              // show navbar
+              nav.classList.toggle("show");
+              // change icon
+              toggle.classList.toggle("bx-x");
+              // add padding to body
+              bodypd.classList.toggle("body-pd");
+              // add padding to header
+              headerpd.classList.toggle("body-pd");
+            });
+          }
+        };
+
+        showNavbar("header-toggle", "nav-bar", "body-pd", "header");
+
+        /*===== LINK ACTIVE =====*/
+        const linkColor = document.querySelectorAll(".nav_link");
+
+        function colorLink() {
+          if (linkColor) {
+            linkColor.forEach((l) => l.classList.remove("active"));
+            this.classList.add("active");
+          }
+        }
+        linkColor.forEach((l) => l.addEventListener("click", colorLink));
+
+        // Your code to run since DOM is loaded and ready
+      });
+    </script>
+    <!-- Script All End-->
+  </body>
 </html>

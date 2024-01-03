@@ -1,7 +1,5 @@
 /*!
  * Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license (Commercial License)
- * Copyright 2023 Fonticons, Inc.
  */
  .fa {
     font-family: var(--fa-style-family, "Font Awesome 6 Pro");
@@ -3544,7 +3542,7 @@
   .fa-pegasus::before {
     content: "\f703"; }
   
-  .fa-files-medical::before {
+  .fa-assets-medical::before {
     content: "\f7fd"; }
   
   .fa-nfc-lock::before {
@@ -6538,7 +6536,7 @@
   .fa-caret-circle-left::before {
     content: "\f32e"; }
   
-  .fa-files::before {
+  .fa-assets::before {
     content: "\e178"; }
   
   .fa-anchor-circle-exclamation::before {
@@ -17682,7 +17680,7 @@
   .fad.fa-pegasus::after, .fa-duotone.fa-pegasus::after {
     content: "\f703\f703"; }
   
-  .fad.fa-files-medical::after, .fa-duotone.fa-files-medical::after {
+  .fad.fa-assets-medical::after, .fa-duotone.fa-assets-medical::after {
     content: "\f7fd\f7fd"; }
   
   .fad.fa-nfc-lock::after, .fa-duotone.fa-nfc-lock::after {
@@ -20676,7 +20674,7 @@
   .fad.fa-caret-circle-left::after, .fa-duotone.fa-caret-circle-left::after {
     content: "\f32e\f32e"; }
   
-  .fad.fa-files::after, .fa-duotone.fa-files::after {
+  .fad.fa-assets::after, .fa-duotone.fa-assets::after {
     content: "\e178\e178"; }
   
   .fad.fa-anchor-circle-exclamation::after, .fa-duotone.fa-anchor-circle-exclamation::after {
