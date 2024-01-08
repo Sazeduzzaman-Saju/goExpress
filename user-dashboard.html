@@ -1,368 +1,299 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Favicon -->
-    <link type="icon" href="assets/images/fav.svg" />
-    <!-- External Stylesheets -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GoExpress - Transport & Logistics Service</title>
     <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/css/bootstrap.min.css"
+      rel="icon"
+      href="assets/img/favicon.png"
+      sizes="20x20"
+      type="image/png"
     />
-    <link rel="stylesheet" type="text/css" href="assets/css/meanmenu.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/sal.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/css/magnific-popup.css"
-    />
-    <link rel="stylesheet" type="text/css" href="assets/css/swiper.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/icons.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/odometer.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
-    <!-- Title -->
-    <title>Go Express - Transport & Logistics Service</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
-      :root {
-        --header-height: 3rem;
-        --nav-width: 68px;
-        --first-color: #4723d9;
-        --first-color-light: #afa5d9;
-        --white-color: #f7f6fb;
-        --body-font: "Nunito", sans-serif;
-        --normal-font-size: 1rem;
-        --z-fixed: 100;
-      }
-
-      *,
-      ::before,
-      ::after {
-        /* 	box-sizing: border-box; */
-      }
-
-      body {
-        /* 	position: relative; */
-        margin: var(--header-height) 0 0 0;
-        padding: 0 1rem;
-        font-family: var(--body-font);
-        font-size: var(--normal-font-size);
-        transition: 0.5s;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      .header {
-        width: 100%;
-        height: var(--header-height);
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 1rem;
-        background-color: var(--white-color);
-        z-index: var(--z-fixed);
-        transition: 0.5s;
-      }
-
-      .header_toggle {
-        color: var(--first-color);
-        font-size: 1.5rem;
-        cursor: pointer;
-      }
-
-      .header_img {
-        width: 35px;
-        height: 35px;
-        display: flex;
-        justify-content: center;
-        border-radius: 50%;
-        overflow: hidden;
-      }
-
-      .header_img img {
-        width: 40px;
-      }
-
-      .l-navbar {
-        /* 	position: fixed; */
-        top: 0;
-        left: -30%;
-        width: var(--nav-width);
-        /* 	height: 100vh; */
-        background-color: var(--first-color);
-        padding: 0.5rem 1rem 0 0;
-        transition: 0.5s;
-        z-index: var(--z-fixed);
-      }
-
-      .nav {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        overflow: hidden;
-      }
-
-      .nav_logo,
-      .nav_link {
-        display: grid;
-        grid-template-columns: max-content max-content;
-        align-items: center;
-        column-gap: 1rem;
-        padding: 0.5rem 0 0.5rem 1.5rem;
-      }
-
-      .nav_logo {
-        margin-bottom: 2rem;
-      }
-
-      .nav_logo-icon {
-        font-size: 1.25rem;
-        color: var(--white-color);
-      }
-
-      .nav_logo-name {
-        color: var(--white-color);
-        font-weight: 700;
-      }
-
-      .nav_link {
-        position: relative;
-        color: var(--first-color-light);
-        margin-bottom: 1.5rem;
-        transition: 0.3s;
-      }
-
-      .nav_link:hover {
-        color: var(--white-color);
-      }
-
-      .nav_icon {
-        font-size: 1.25rem;
-      }
-
-      .show {
-        left: 0;
-      }
-
-      .body-pd {
-        padding-left: calc(var(--nav-width) + 1rem);
-      }
-
-      .active {
-        color: var(--white-color);
-      }
-
-      .active::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        width: 2px;
-        height: 32px;
-        background-color: var(--white-color);
-      }
-
-      .height-100 {
-        height: 100vh;
-      }
-
-      @media screen and (min-width: 768px) {
-        body {
-          margin: calc(var(--header-height) + 1rem) 0 0 0;
-          padding-left: calc(var(--nav-width) + 2rem);
-        }
-
-        .header {
-          height: calc(var(--header-height) + 1rem);
-          padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
-        }
-
-        .header_img {
-          width: 40px;
-          height: 40px;
-        }
-
-        .header_img img {
-          width: 45px;
-        }
-
-        .l-navbar {
-          left: 0;
-          padding: 1rem 1rem 0 0;
-        }
-
-        .show {
-          width: calc(var(--nav-width) + 156px);
-        }
-
-        .body-pd {
-          padding-left: calc(var(--nav-width) + 188px);
-        }
-      }
-    </style>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/vendor.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom_style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12">
-          <header class="header" id="header">
-            <div class="header_toggle">
-              <i class="fa-solid fa-arrow-right-arrow-left" id="header-toggle"></i>
-            </div>
-            <div class="header_img">
-              <img src="https://i.imgur.com/hczKIze.jpg" alt="" />
-            </div>
-          </header>
-          <div class="l-navbar position-fixed vh-100" id="nav-bar">
-            <nav class="nav">
-              <div>
-                <a href="#" class="nav_logo">
-                  <i class="bx bx-layer nav_logo-icon"></i>
-                  <span class="nav_logo-name">Go Express</span>
-                </a>
-                <div class="nav_list">
-                  <a href="#" class="nav_link active">
-                    <i class="bx bx-grid-alt nav_icon"></i>
-                    <span class="nav_name">Dashboard</span>
-                  </a>
-                  <a href="#" class="nav_link">
-                    <i class="bx bx-user nav_icon"></i>
-                    <span class="nav_name">Users</span>
-                  </a>
-                  <a href="#" class="nav_link">
-                    <i class="bx bx-message-square-detail nav_icon"></i>
-                    <span class="nav_name">Messages</span>
-                  </a>
-                  <a href="#" class="nav_link">
-                    <i class="bx bx-bookmark nav_icon"></i>
-                    <span class="nav_name">Bookmark</span>
-                  </a>
-                  <a href="#" class="nav_link">
-                    <i class="bx bx-folder nav_icon"></i>
-                    <span class="nav_name">Files</span>
-                  </a>
-                  <a href="#" class="nav_link">
-                    <i class="bx bx-bar-chart-alt-2 nav_icon"></i>
-                    <span class="nav_name">Stats</span>
-                  </a>
-                </div>
-              </div>
-              <a href="#" class="nav_link">
-                <i class="bx bx-log-out nav_icon"></i>
-                <span class="nav_name">SignOut</span>
-              </a>
-            </nav>
-          </div>
-          <!--Container Main start-->
-          <div class="height-100 bg-light">
-            <h4>Main Components</h4>
-          </div>
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-inner">
+        <div class="spinner">
+          <div class="dot1"></div>
+          <div class="dot2"></div>
         </div>
       </div>
     </div>
-    <!--=========== Footer Section End =========-->
-    <!-- start scrollUp  -->
-    <div class="logiland-scroll-top progress-done">
-      <svg
-        class="progress-circle svg-content"
-        width="100%"
-        height="100%"
-        viewBox="-1 -1 102 102"
-      >
-        <path
-          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-          style="
-            transition: stroke-dashoffset 10ms linear 0s;
-            stroke-dasharray: 307.919px, 307.919px;
-            stroke-dashoffset: 71.1186px;
-          "
-        ></path>
-      </svg>
-      <div class="logiland-scroll-top-icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          role="img"
-          width="1em"
-          height="1em"
-          viewBox="0 0 24 24"
-          data-icon="mdi:arrow-up"
-          class="iconify iconify--mdi"
-        >
-          <path
-            fill="currentColor"
-            d="M13 20h-2V8l-5.5 5.5l-1.42-1.42L12 4.16l7.92 7.92l-1.42 1.42L13 8v12Z"
-          ></path>
-        </svg>
-      </div>
+    <!-- preloader area end -->
+
+    <!-- search popup start-->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="td-search-popup" id="td-search-popup">
+      <form action="home.html" class="search-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search....." />
+        </div>
+        <button type="submit" class="submit-btn">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
     </div>
-    <!-- End scrollUp  -->
-    <!-- Script All Start-->
-    <script src="assets/js/modernizr-2.8.3.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/meanmenu.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
-    <script src="assets/js/owl.carousel.js"></script>
-    <script src="assets/js/jquery.appear.min.js"></script>
-    <script src="assets/js/odometer.min.js"></script>
-    <script src="assets/js/sal.js"></script>
-    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- search popup end-->
+    <main>
+      <div class="sidebar">
+        <div class="logo-details">
+          <img src="https://i.ibb.co/x27VjRM/Go-Express-LOGO.png" alt="" />
+        </div>
+        <ul class="nav-links">
+          <li class="active">
+            <a href="user-dashboard.html">
+              <i class="fa-solid fa-house"></i>
+              <span class="link_name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class="fa-solid fa-globe"></i>
+                <span class="link_name">Ship Anywhere</span>
+              </a>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="shipment-anywhere.html">Shipment Anywhere</a></li>
+              <li><a href="create-shipment.html">Create Shipment</a></li>
+              <li><a href="shipment-list.html">Shipment List</a></li>
+              <li><a href="pickup.html">Pickup</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class="fa-solid fa-ship"></i>
+                <span class="link_name">Shipping Supply</span>
+              </a>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="#">USPS - Free of Cost.</a></li>
+              <li><a href="#">USPS - Free of Cost.</a></li>
+              <li><a href="#">FedEx - Free of Cost.</a></li>
+              <li><a href="#">DHL - Free of Cost.</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class="fa-solid fa-clipboard-check"></i>
+                <span class="link_name">Booking Parcel</span>
+              </a>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="#">Create Booking</a></li>
+              <li><a href="#">Booking List</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span class="link_name">Shop & Ship</span>
+              </a>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="#">Payment Due</a></li>
+              <li><a href="#">Ongoing Orders</a></li>
+              <li><a href="#">Delivered Orders</a></li>
+              <li><a href="#">Cancelled Orders</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class="fa-solid fa-house"></i>
+                <span class="link_name">Accesories</span>
+              </a>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="#">Payment Due</a></li>
+              <li><a href="#">Ongoing Orders</a></li>
+              <li><a href="#">Delivered Orders</a></li>
+              <li><a href="#">Cancelled Orders</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="profile-details">
+              <div class="profile-content">
+                <img
+                  class="rounded-circle"
+                  src="https://gravatar.com/avatar/f57bddebd1edf91412d5d68702530099"
+                  alt="profileImg"
+                />
+              </div>
+              <div class="name-job">
+                <div class="profile_name">Sazeduzzaman</div>
+                <div class="job">Web Desginer</div>
+              </div>
+              <i class="fa-solid fa-right-from-bracket text-white"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="home-section">
+        <div class="bg-white d-flex justify-content-between align-items-center user_header">
+          <!-- Toggler Icon -->
+          <div class="home-content">
+            <i class="fa-solid fa-right-left bx-menu"></i>
+          </div>
+          <!-- Header Menu -->
+          <div>
+            <a href="" class="me-3"
+              ><i class="fa-solid fa-ship pe-1 icon-site-red"></i>SHOPPING</a
+            >
+            <a href="" class="me-3"
+              ><i class="fa-solid fa-globe pe-1 icon-site-red"></i>SHIP ANYWHERE</a
+            >
+            <a href="" class="me-3"
+              ><i class="fa-solid fa-truck-ramp-box pe-1 icon-site-red"></i>USA TO BD CARGO</a
+            >
+            <a href="" class="me-3"
+              ><i class="fa-solid fa-shop pe-1 icon-site-red"></i>SHOP & SHIP</a
+            >
+            <a href="" class="me-3"
+              ><i class="fa-solid fa-user pe-1 icon-site-red"></i> VIEW ACCOUNTS</a
+            >
+          </div>
+          <!-- Profile -->
+          <div>
+            <div class="dropdown">
+              <a class="dropdown-toggle pe-2" type="button" data-bs-auto-close="outside" aria-expanded="false" data-bs-toggle="dropdown" >
+                <img
+                  class="rounded-circle p-0" width="50px"
+                  src="https://gravatar.com/avatar/f57bddebd1edf91412d5d68702530099"
+                  alt="profileImg"
+                />
+              </a>
+              <ul class="dropdown-menu border-0 shadow-lg text-end">
+                <li><a class="dropdown-item" href="#">My Profile <i class="fa-regular fa-user ps-2"></i></a></li>
+                <li><a class="dropdown-item" href="#">Shipping List<i class="fa-solid fa-list ps-2"></i></a></li>
+                <li><a class="dropdown-item" href="#">Time Table <i class="fa-solid fa-table-cells-large ps-2"></i></a></li>
+                <li><a class="dropdown-item" href="#">Shiping Status <i class="fa-solid fa-signal ps-2"></i></a></li>
+                <li><a class="dropdown-item" href="#">Log Out <i class="fa-solid fa-arrow-right-from-bracket ps-2"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-center" style="padding-top: 30px;">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="padding-top: 30px;">
+            <div class="col-lg-3">
+              <div class="card border-0 rounded-0 shadow-sm">
+                <div class="card-header border-0 dashboard-header">SHOPPING</div>
+                <div class="card-body px-0">
+                  <di class="d-flex justify-content-around">
+                    <div class="text-center py-5 px-4 shadow-sm dashboard-box">
+                      <a href=""><i class="fa-solid fa-folder-plus"></i> <br> Create Order</a>
+                    </div>
+                    <div class="text-center py-5 px-4 shadow-sm dashboard-box">
+                      <a href=""><i class="fa-solid fa-retweet"></i> <br> Ongoing Order (0)</a>
+                    </div>
+                  </di>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card border-0 rounded-0 shadow-sm">
+                <div class="card-header border-0 dashboard-header">SHIP ANYWHERE</div>
+                <div class="card-body px-0">
+                  <di class="d-flex justify-content-around">
+                    <div class="text-center py-5 px-4 shadow-sm dashboard-box">
+                      <a href=""><i class="fa-solid fa-folder-plus"></i> <br> Create Order</a>
+                    </div>
+                    <div class="text-center py-5 px-4 shadow-sm dashboard-box">
+                      <a href=""><i class="fa-solid fa-retweet"></i> <br> Ongoing Order (0)</a>
+                    </div>
+                  </di>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card border-0 rounded-0 shadow-sm">
+                <div class="card-header border-0 dashboard-header">CARGO TO BANGLADESH</div>
+                <div class="card-body px-0">
+                  <di class="d-flex justify-content-around">
+                    <div class="text-center py-5 px-4 shadow-sm dashboard-box">
+                      <a href=""><i class="fa-solid fa-folder-plus"></i> <br> Create Order</a>
+                    </div>
+                    <div class="text-center py-5 px-4 shadow-sm dashboard-box">
+                      <a href=""><i class="fa-solid fa-retweet"></i> <br> Ongoing Order (0)</a>
+                    </div>
+                  </di>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card border-0 rounded-0 shadow-sm">
+                <div class="card-header border-0 dashboard-header">SHOP & SHIP</div>
+                <div class="card-body px-0">
+                  <di class="d-flex justify-content-around">
+                    <div class="text-center py-5 px-4 shadow-sm dashboard-box">
+                      <a href=""><i class="fa-solid fa-folder-plus"></i> <br> Create Order</a>
+                    </div>
+                    <div class="text-center py-5 px-4 shadow-sm dashboard-box">
+                      <a href=""><i class="fa-solid fa-retweet"></i> <br> Ongoing Order (0)</a>
+                    </div>
+                  </di>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+      <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+    <!-- all plugins here -->
+    <script
+      src="https://kit.fontawesome.com/69b7156a94.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- main js  -->
     <script src="assets/js/main.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function (event) {
-        const showNavbar = (toggleId, navId, bodyId, headerId) => {
-          const toggle = document.getElementById(toggleId),
-            nav = document.getElementById(navId),
-            bodypd = document.body,
-            headerpd = document.getElementById(headerId);
-
-          // Validate that all variables exist
-          if (toggle && nav && bodypd && headerpd) {
-            toggle.addEventListener("click", () => {
-              // show navbar
-              nav.classList.toggle("show");
-              // change icon
-              toggle.classList.toggle("bx-x");
-              // add padding to body
-              bodypd.classList.toggle("body-pd");
-              // add padding to header
-              headerpd.classList.toggle("body-pd");
-            });
-          }
-        };
-
-        showNavbar("header-toggle", "nav-bar", "body-pd", "header");
-
-        /*===== LINK ACTIVE =====*/
-        const linkColor = document.querySelectorAll(".nav_link");
-
-        function colorLink() {
-          if (linkColor) {
-            linkColor.forEach((l) => l.classList.remove("active"));
-            this.classList.add("active");
-          }
-        }
-        linkColor.forEach((l) => l.addEventListener("click", colorLink));
-
-        // Your code to run since DOM is loaded and ready
+      let arrow = document.querySelectorAll(".arrow");
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+          let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+          arrowParent.classList.toggle("showMenu");
+        });
+      }
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".bx-menu");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
       });
     </script>
-    <!-- Script All End-->
   </body>
 </html>

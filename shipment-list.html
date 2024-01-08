@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GoExpress - Transport & Logistics Service</title>
+    <link
+      rel="icon"
+      href="assets/img/favicon.png"
+      sizes="20x20"
+      type="image/png"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/vendor.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom_style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-inner">
+        <div class="spinner">
+          <div class="dot1"></div>
+          <div class="dot2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- preloader area end -->
+
+    <!-- search popup start-->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="td-search-popup" id="td-search-popup">
+      <form action="home.html" class="search-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search....." />
+        </div>
+        <button type="submit" class="submit-btn">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+    </div>
+    <!-- search popup end-->
+    <main>
+      <div class="sidebar">
+        <div class="logo-details">
+          <img src="https://i.ibb.co/x27VjRM/Go-Express-LOGO.png" alt="" />
+        </div>
+        <ul class="nav-links">
+          <li class="active">
+            <a href="user-dashboard.html">
+              <i class="fa-solid fa-house"></i>
+              <span class="link_name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class="fa-solid fa-globe"></i>
+                <span class="link_name">Ship Anywhere</span>
+              </a>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="shipment-anywhere.html">Shipment Anywhere</a></li>
+              <li><a href="create-shipment.html">Create Shipment</a></li>
+              <li><a href="shipment-list.html">Shipment List</a></li>
+              <li><a href="pickup.html">Pickup</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class="fa-solid fa-ship"></i>
+                <span class="link_name">Shipping Supply</span>
+              </a>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="#">USPS - Free of Cost.</a></li>
+              <li><a href="#">USPS - Free of Cost.</a></li>
+              <li><a href="#">FedEx - Free of Cost.</a></li>
+              <li><a href="#">DHL - Free of Cost.</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class="fa-solid fa-clipboard-check"></i>
+                <span class="link_name">Booking Parcel</span>
+              </a>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="#">Create Booking</a></li>
+              <li><a href="#">Booking List</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <span class="link_name">Shop & Ship</span>
+              </a>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="#">Payment Due</a></li>
+              <li><a href="#">Ongoing Orders</a></li>
+              <li><a href="#">Delivered Orders</a></li>
+              <li><a href="#">Cancelled Orders</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class="fa-solid fa-house"></i>
+                <span class="link_name">Accesories</span>
+              </a>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="#">Payment Due</a></li>
+              <li><a href="#">Ongoing Orders</a></li>
+              <li><a href="#">Delivered Orders</a></li>
+              <li><a href="#">Cancelled Orders</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="profile-details">
+              <div class="profile-content">
+                <img
+                  class="rounded-circle"
+                  src="https://gravatar.com/avatar/f57bddebd1edf91412d5d68702530099"
+                  alt="profileImg"
+                />
+              </div>
+              <div class="name-job">
+                <div class="profile_name">Sazeduzzaman</div>
+                <div class="job">Web Desginer</div>
+              </div>
+              <i class="fa-solid fa-right-from-bracket text-white"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="home-section">
+        <div class="bg-white d-flex justify-content-between align-items-center user_header">
+          <!-- Toggler Icon -->
+          <div class="home-content">
+            <i class="fa-solid fa-right-left bx-menu"></i>
+          </div>
+          <!-- Header Menu -->
+          <div>
+            <a href="" class="me-3"
+              ><i class="fa-solid fa-ship pe-1 icon-site-red"></i>SHOPPING</a
+            >
+            <a href="" class="me-3"
+              ><i class="fa-solid fa-globe pe-1 icon-site-red"></i>SHIP ANYWHERE</a
+            >
+            <a href="" class="me-3"
+              ><i class="fa-solid fa-truck-ramp-box pe-1 icon-site-red"></i>USA TO BD CARGO</a
+            >
+            <a href="" class="me-3"
+              ><i class="fa-solid fa-shop pe-1 icon-site-red"></i>SHOP & SHIP</a
+            >
+            <a href="" class="me-3"
+              ><i class="fa-solid fa-user pe-1 icon-site-red"></i> VIEW ACCOUNTS</a
+            >
+          </div>
+          <!-- Profile -->
+          <div>
+            <div class="dropdown">
+              <a class="dropdown-toggle pe-2" type="button" data-bs-auto-close="outside" aria-expanded="false" data-bs-toggle="dropdown" >
+                <img
+                  class="rounded-circle p-0" width="50px"
+                  src="https://gravatar.com/avatar/f57bddebd1edf91412d5d68702530099"
+                  alt="profileImg"
+                />
+              </a>
+              <ul class="dropdown-menu border-0 shadow-lg text-end">
+                <li><a class="dropdown-item" href="#">My Profile <i class="fa-regular fa-user ps-2"></i></a></li>
+                <li><a class="dropdown-item" href="#">Shipping List<i class="fa-solid fa-list ps-2"></i></a></li>
+                <li><a class="dropdown-item" href="#">Time Table <i class="fa-solid fa-table-cells-large ps-2"></i></a></li>
+                <li><a class="dropdown-item" href="#">Shiping Status <i class="fa-solid fa-signal ps-2"></i></a></li>
+                <li><a class="dropdown-item" href="#">Log Out <i class="fa-solid fa-arrow-right-from-bracket ps-2"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-center" style="padding-top: 30px;">
+                <h3>Comming Soon</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+      <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+    <!-- all plugins here -->
+    <script
+      src="https://kit.fontawesome.com/69b7156a94.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- main js  -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      let arrow = document.querySelectorAll(".arrow");
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+          let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+          arrowParent.classList.toggle("showMenu");
+        });
+      }
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".bx-menu");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+    </script>
+  </body>
+</html>
